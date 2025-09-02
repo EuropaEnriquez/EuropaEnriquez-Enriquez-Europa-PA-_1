@@ -1,4 +1,4 @@
-**1. Alphabet Soup Problem**
+**1. Alphabet Soup Problem** - 
 Create a function that takes a string and returns a string with its letters sorted in alphabetical order.
 
 ```
@@ -16,7 +16,7 @@ Input: "hello"
 Output: "olleh"
 ```
 
-**2. Emoticon Problem**
+**2. Emoticon Problem** - 
 Create a function that converts specific words in a sentence to their matching emoticons. The words replaced are "smile" → ":)", "grin" → ":D", "sad" → ":(", and "mad" → ">:("
 ```
 def emotify(sentence):
@@ -51,7 +51,7 @@ Output: "Make me :)"
 ```
 
 
-**3. Unpacking List Problem**
+**3. Unpacking List Problem** - 
 Given a list, unpack it into three variables: first element, middle elements as a sublist, and last element. Then print these variables.
 
 ```
@@ -81,7 +81,7 @@ last: 6
 
 **REVISION #1 (Revised problem 1)**
 
-**PROBLEM 1**
+**PROBLEM 1: Alphabet Soup** - Create a function that takes a string and returns a string with its letters sorted in alphabetical order.
 
 ```
 def alphabet_soup(word):
