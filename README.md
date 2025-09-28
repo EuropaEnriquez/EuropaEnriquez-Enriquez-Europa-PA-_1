@@ -97,5 +97,90 @@ Example:
 Output: ehllo
         dlorw
 ```
+**REVISION #2(ADDED COMMENTS)**
+**PROBLEM 1: Alphabet Soup** - Create a function that takes a string and returns a string with its letters sorted in alphabetical order.
+
+```
+def alphabet_soup(word):
+    return ''.join(sorted(word)) #Sort letters in word and join them back into a string
+print(alphabet_soup("hello")) #OUTPUT: ehllo
+print(alphabet_soup("world")) #OUTPUT: dlorw 
+```
+
+How the code works:  
+This function uses built-in sorted() function to sort the letters of the input string alphabetically, then joins the sorted letters back into a single string before returning it.
+```
+Example:
+Output: ehllo
+        dlorw
+```
+
+**2. Emoticon Problem** - Create a function that converts specific words in a sentence to their matching emoticons. The words replaced are "smile" → ":)", "grin" → ":D", "sad" → ":(", and "mad" → ">:("
+```
+def emotify(sentence):
+    #Splits the sentence into individual words
+    words = sentence.split()
+    result = ""
+
+    #Loops through each word and replaces specific ones with emojis
+    for word in words:
+        if word == "smile":
+            result += ":) "
+        elif word == "grin":
+            result += ":D "
+        elif word == "sad":
+            result += ":( "
+        elif word == "mad":
+            result += ">:( "
+        else:
+            result += word + " "  #Keeps other words unchanged
+
+    return result
+
+# Test cases
+print(emotify("Make me smile"))  # OUTPUT: Make me :) 
+print(emotify("Make me mad"))    # OUTPUT: Make me >:( 
+print(emotify("Make me sad"))    # OUTPUT: Make me :( 
+print(emotify("Make me grin"))   # OUTPUT: Make me :D 
+
+```
+How the code works:  
+The function `emotify(sentence)` splits the input sentence into words and iterates over them. When a word matches one of the target words, it inserts the corresponding emoticon into the result string. Other words remain unchanged. It returns the sentence with emoticons replacing the specified words.
+
+```
+Example:
+Input: "Make me smile"
+Output: "Make me :)"
+```
+
+
+**3. Unpacking List Problem** - Given a list, unpack it into three variables: first element, middle elements as a sublist, and last element. Then print these variables.
+
+```
+lst = [1, 2, 3, 4, 5, 6]   #create a list of numbers
+
+first = lst[0]             #the first element will be 1
+middle = lst[1:-1]         #all elements displayed except first & last → [2, 3, 4, 5]
+last = lst[-1]             #the last element → 6
+
+print("first:", first)     #first: 1
+print("middle:", middle)   #middle: [2, 3, 4, 5]
+print("last:", last)       #last: 6
+```
+
+How the code works:  
+A list `lst` is defined. The first element is assigned to `first`, the middle elements (everything except the first and last) to `middle`, and the last element to `last`. These variables are printed showing the unpacked parts of the list.
+
+```
+Example:  
+Input:[1][2]
+
+Output:  
+first: 1  
+middle:[2, 3, 4, 5]
+last: 6
+```
+
+
 
 
